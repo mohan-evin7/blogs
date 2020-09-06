@@ -1,0 +1,28 @@
+
+<%- include("header"); -%>
+
+  <div class="container">
+
+    <%  posts.forEach(function(post){ %>
+
+      <div class="row">
+        <div class="row-content col-lg-5 col-md-12 col-sm-12" style="border: 2px solid #ccc; margin: 40px 40px; padding: 20px 20px;">
+          <h1><%=post.title%></h1>
+          <p>
+            <%=post.content.substring(0, 500) + " ..."%>
+            
+          </p>
+          <a role="button" class="btn btn-primary" href="/posts/<%=post._id%>">Read More</a>
+        </div>
+      </div>
+  
+  
+      <% }) %>
+  
+
+  </div>
+
+
+  
+
+<%- include("footer"); -%>

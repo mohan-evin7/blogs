@@ -1,0 +1,18 @@
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.nav-link
+{
+  margin-right: 40px;
+
+}
+
+
+.row-content{
+   border: 2px solid red;
+
+   margin: 40px 40px;
+}
